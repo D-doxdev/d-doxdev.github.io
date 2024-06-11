@@ -207,7 +207,7 @@ section.desktop-grid {
     display: flex;
     padding: 0.5rem;
     z-index: 999999999;
-    justify-content: space-between;
+    justify-content: start;
     box-shadow: 0 -2px #fffdfc, 0 -3px #cce9eb;
 }
 
@@ -215,7 +215,7 @@ section.desktop-grid {
 .start-button {
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
 }
 
 .start-button img {
@@ -224,5 +224,40 @@ section.desktop-grid {
 
 .start-button span{
     font-weight: bold;
+    font-size: 1rem;
+}
+
+/* windows tabs styling */
+.window-tabs {
+    margin-left: .5rem;
+    display: flex;
+    gap: .2rem;
+    justify-content: start;
+}
+
+/*
+.campaign-members-tab {
+    flex-grow: 1;
+}
+
+.sessions-tab {
+    flex-grow: 1;
+}
+
+.dmbf-simulator-tab {
+    flex-grow: 1;
+}
+*/
+.tabs-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+}
+
+.tabs span {
+    margin-left: .5rem;
+    font-weight:normal;
     font-size: 1rem;
 }

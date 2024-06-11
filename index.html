@@ -38,7 +38,7 @@
                 Campaign Members
             </div>
             <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
+                <button id="camMemMinimizeBtn" aria-label="Minimize"></button>
                 <button aria-label="Maximize"></button>
                 <button aria-label="Close"></button>
             </div>
@@ -93,7 +93,7 @@ Placeholder</textarea>
                 Sessions
             </div>
             <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
+                <button id="sessionsMinimizeBtn" aria-label="Minimize"></button>
                 <button aria-label="Maximize"></button>
                 <button aria-label="Close"></button>
             </div>
@@ -119,13 +119,13 @@ Placeholder</textarea>
         </div>
     </div>
 
-        <div id="dmbf-simulator" class="window pages" style="width: 1200px; height: 1040px;">
+        <div id="dmbf-simulator" class="window pages" style="width: 60vw; height: 60vh;">
             <div class="title-bar">
                 <div class="title-bar-text">
                     DMBF Simulator
                 </div>
                 <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
+                    <button id="dmbfMinimizeBtn" aria-label="Minimize"></button>
                     <button aria-label="Maximize"></button>
                     <button aria-label="Close"></button>
                 </div>
@@ -198,6 +198,17 @@ Placeholder</textarea>
             <div class="start-bar">
                 <button class="start-button"><img src="./recources/win98_icons/windows98-icons/ico/windows.ico"
                         alt="windows98 icon"><span>Start</span></button>
+                <div class="window-tabs">
+                    <div class="campaign-members-tab tabs"><button id="camMemBtn" class="tabs-btn"><img
+                                src="./recources/win98_icons/windows98-icons/ico/windows.ico"
+                                alt="windows98 icon"><span>Campaign Members</span></button></div>
+                    <div class="sessions-tab tabs"><button id="sessionsBtn" class="tabs-btn"><img
+                                src="./recources/win98_icons/windows98-icons/ico/windows.ico"
+                                alt="windows98 icon"><span>Sessions</span></button></div>
+                    <div class="dmbf-simulator-tab tabs"><button id="dmbfBtn" class="tabs-btn"><img
+                                src="./recources/win98_icons/windows98-icons/ico/windows.ico"
+                                alt="windows98 icon"><span>DMBF Simulator</span></button></div>
+                </div>
             </div>
         </nav>
     </footer>

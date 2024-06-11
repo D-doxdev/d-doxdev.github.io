@@ -119,6 +119,7 @@ memberArr.forEach(member => {
             characterRace.value = 'Kille Harengon';
             irlMemberImg.src = './recources/images/members/profile-images/adamprofile.jpg';
             dndCharImg.src = './recources/images/members/member-characters/adamcharacter.png';
+            charDescription.value = '';
         } else if(member === almaInfo) {
             irlName.value = 'Alma';
             characterName.value = 'Seraphina Songbird';
@@ -126,6 +127,7 @@ memberArr.forEach(member => {
             characterRace.value = 'Aasimar';
             irlMemberImg.src = './recources/images/members/profile-images/almaprofile.jpg';
             dndCharImg.src = './recources/images/members/member-characters/almacharacter.png';
+            charDescription.value = '';
         } else if(member === victorInfo) {
             irlName.value = 'Victor';
             characterName.value = 'Alden Nightspawn';
@@ -133,6 +135,7 @@ memberArr.forEach(member => {
             characterRace.value = 'Elf';
             irlMemberImg.src = './recources/images/members/profile-images/victorprofile.png';
             dndCharImg.src = './recources/images/members/member-characters/victorcharacter.png';
+            charDescription.value = '';
         } else if(member === amandaInfo) {
             irlName.value = 'Amanda';
             characterName.value = 'Jude Brightbinder';
@@ -140,6 +143,7 @@ memberArr.forEach(member => {
             characterRace.value = 'Human';
             irlMemberImg.src = './recources/images/members/profile-images/amandaprofile.png';
             dndCharImg.src = './recources/images/members/member-characters/defaultcharacter.png';
+            charDescription.value = '';
         } else if(member === jacobInfo) {
             irlName.value = 'Jacob';
             characterName.value = 'Zyzz';
@@ -147,6 +151,7 @@ memberArr.forEach(member => {
             characterRace.value = 'Aasimar';
             irlMemberImg.src = './recources/images/members/profile-images/jacobprofile.png';
             dndCharImg.src = './recources/images/members/member-characters/jacobcharacter.png';
+            charDescription.value = '';
         } else if(member === atonInfo) {
             irlName.value = 'Anton';
             characterName.value = 'Antioch';
@@ -154,6 +159,7 @@ memberArr.forEach(member => {
             characterRace.value = 'Warforged';
             irlMemberImg.src = './recources/images/members/profile-images/antonprofile.png';
             dndCharImg.src = './recources/images/members/member-characters/antoncharacter.png';
+            charDescription.value = '';
         } else if(member === nicholasInfo) {
             irlName.value = 'Nicholas';
             characterName.value = 'Nyxxalas';
@@ -164,16 +170,59 @@ memberArr.forEach(member => {
             charDescription.value = "Origin story In the vibrant city of Mount Graywalk, where fortunes were made and lost with the roll of the dice, Nyxalas Coinbind was not merely a dwarf; he was a renowned professional gambler -originally from Coldborough. His nimble fingers could shuffle cards with unparalleled skill, and his sharp mind could calculate odds and assess risks with a precision that made him a legend in the underground gambling dens. Known for his audacity, Nyxalas found himself in a high-stakes game against none other than Zarkathirax the Goldhoarder, a dragon who reveled in the thrill of chance and craved the excitement that mortal games of luck brought. The stakes were set high – Nyxalas wagered a colossal sum, thinking he could outwit the ancient dragon in a game of chance. However, luck proved fickle, and the tide turned against him. As the dice settled and the cards were revealed, Nyxalas found himself facing a debt he could never hope to repay. Zarkathirax, reveling in the dwarf's misfortune, offered him a sinister proposition. Instead of suffering the consequences of his failed gamble, Nyxalas could choose a different path – a pact with the Undying. The pact would afford Nyxalas time to repay his debt. Desperation and the looming specter of financial ruin pushed Nyxalas to accept the dragon's terms. The pact was sealed, and Nyxalas became an Undying warlock, forever bound to the dragon's will. In return, he gained the power to cheat death and manipulate the threads of fate, a boon that served him well in both gambling and his newfound servitude. Now, Nyxalas roams the realms as a gambler on the edge of life and death, his every move dictated by the whims of Zarkathirax. He seeks opportunities to amass wealth and power, using his Undying abilities to navigate the dangerous underworld of gambling and intrigue. Yet, beneath the bravado and the glimmer of gold, Nyxalas yearns to break free from the eternal game he plays, searching for elusive artifacts and forbidden knowledge that might one day allow him to reclaim his autonomy and settle the unpayable debt that binds him to the cunning dragon. Relationship with others: Zarkathirax the Goldhoarder: A tumultuous alliance marked by Nyxalas's stark realization that he has fallen victim to a wager, bound by the unyielding terms set forth. Despite the unavoidable adherence to the agreed-upon terms, a simmering resentment festers within Nyxalas towards Zarkathirax, an ember of discontent burning beneath the surface of their intricate and strained relationship.";
         }
     };
-});
+})
 
-// Campaign members
+// All code responsible for hiding and unhiding pages/windows
 
+// Variables connecting to the pages
+let campaignMembersPage = document.getElementById('campaign-members');
+let sessionsPage = document.getElementById('sessions');
+let dmbfPage = document.getElementById('dmbf-simulator');
 
+// Variables connecting to the tab buttons
+let campaignMembersTab = document.getElementById('camMemBtn');
+let sessionsTab = document.getElementById('sessionsBtn');
+let dmbfTab = document.getElementById('dmbfBtn');
 
-/* Alma info func */
+// Variables connecting to page minimize buttons
+let campaignMembersMinimizeBtn = document.getElementById('camMemMinimizeBtn');
+let sessionsMinimizeBtn = document.getElementById('sessionsMinimizeBtn');
+let dmbfMinimizeBtn = document.getElementById('dmbfMinimizeBtn');
 
-/*
-almaInfo.onclick = function() {
-    irlName.value = 'Alma';
-  }
-  */
+// function responsible for hiding/unhiding pages/windows
+
+campaignMembersTab.onclick = function(){
+    if(campaignMembersPage.style.display === 'none') {
+        campaignMembersPage.style.display = 'block';
+    } else {
+        campaignMembersPage.style.display = 'none';
+    }
+}
+
+sessionsTab.onclick = function(){
+    if(sessionsPage.style.display === 'none') {
+        sessionsPage.style.display = 'block';
+    } else {
+        sessionsPage.style.display = 'none';
+    }
+}
+
+dmbfTab.onclick = function(){
+    if(dmbfPage.style.display === 'none') {
+        dmbfPage.style.display = 'block';
+    } else {
+        dmbfPage.style.display = 'none';
+    }
+}
+
+campaignMembersMinimizeBtn.onclick = function(){
+    campaignMembersPage.style.display = 'none';
+}
+
+sessionsMinimizeBtn.onclick = function(){
+    sessionsPage.style.display = 'none';
+}
+
+dmbfMinimizeBtn.onclick = function(){
+    dmbfPage.style.display = 'none';
+}
