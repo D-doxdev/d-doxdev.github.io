@@ -235,19 +235,6 @@ section.desktop-grid {
     justify-content: start;
 }
 
-/*
-.campaign-members-tab {
-    flex-grow: 1;
-}
-
-.sessions-tab {
-    flex-grow: 1;
-}
-
-.dmbf-simulator-tab {
-    flex-grow: 1;
-}
-*/
 .tabs-btn {
     display: flex;
     flex-direction: row;
@@ -261,3 +248,7 @@ section.desktop-grid {
     font-weight:normal;
     font-size: 1rem;
 }
+
+.tabs img {
+    height: 1.7rem;
+};
