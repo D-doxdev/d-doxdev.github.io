@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>98.css example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="./recources/css/reset.css">
+    <link rel="stylesheet" href="./recources/css/style.css">
+    <link rel="stylesheet" href="./recources/Drawing App JavaScript/Drawing App JavaScript/style.css">
+    <script src="./recources/Drawing App JavaScript/Drawing App JavaScript/script.js" defer></script>
+</head>
+
+<body>
+    <nav class="pc-icons-container">
+        <div class="desktop-app desktop-app-1">
+            <img src="./recources/win98_icons/windows98-icons/ico/cd_drive.ico">
+            <p>Sessions</p>
+        </div>
+        <div class="desktop-app desktop-app-2">
+            <img src="./recources/win98_icons/windows98-icons/ico/display_properties.ico">
+            <p>DMBF Simulator</p>
+        </div>
+        <div class="desktop-app desktop-app-3">
+            <img src="./recources/win98_icons/windows98-icons/ico/users.ico">
+            <p>Campaign Members</p>
+        </div>
+        <div class="desktop-app desktop-app-4">
+            <img src="./recources/win98_icons/windows98-icons/ico/msagent.ico">
+            <p>SUPER_SECRET<br>_DM_STUFF</p>
+        </div>
+    </nav>
+<section class="desktop-grid">
+    <div id="campaign-members" class="window pages" style="width: 40vw; height: 40vh;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                Campaign Members
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body members-window-body">
+            <menu role="tablist">
+                <li role="tab" aria-selected="true"><a href="#tabs">Adam</a></li>
+                <li role="tab" aria-selected=""><a href="#tabs">Alma</a></li>
+                <li role="tab" aria-selected=""><a href="#tabs">Victor</a></li>
+                <li role="tab" aria-selected=""><a href="#tabs">Amanda</a></li>
+                <li role="tab" aria-selected=""><a href="#tabs">Jacob</a></li>
+                <li role="tab" aria-selected=""><a href="#tabs">Anton</a></li>
+                <li role="tab" aria-selected=""><a href="#tabs">Nicholas</a></li>
+            </menu>
+            <div class="window img-description-container" role="tabpanel">
+                <div class="image-section">
+                    <img id="member-irl-img" src="./recources/images/members/profile-images/adamprofile.jpg" alt="Member profile picture">
+                    <img id="dnd-char-img" src="./recources/images/members/member-characters/adamcharacter.png" alt="Dungeons and dragons character picture">
+                    <div class="field-row-stacked" style="width: 200px">
+                        <label for="text1">IRL name</label>
+                        <input id="text1" type="text" value="Adam"/>
+                    </div>
+                    <div class="field-row-stacked" style="width: 200px">
+                        <label for="text2">Character name</label>
+                        <input id="text2" type="text" value="Sphix Mycok"/>
+                    </div>
+                    <div class="field-row-stacked" style="width: 200px">
+                        <label for="text3">Class</label>
+                        <input id="text3" type="text" value="Rogue"/>
+                    </div>
+                    <div class="field-row-stacked" style="width: 200px">
+                        <label for="text4">Race</label>
+                        <input id="text4" type="text" value="Kille Haregon"/>
+                    </div>
+                </div>
+                <div class="text-section">
+                    <div class="window-body cm-window">
+                        <div class="field-row-stacked" style="width: 300px">
+                            <label for="textdesc">Description</label>
+                            <textarea id="textdesc" rows="30">
+Placeholder</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sessions" class="window pages" style="width: 50vw; height: 60vh;">
+        <div class="title-bar sessions-title-bar">
+            <div class="title-bar-text">
+                Sessions
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body sessions-window-body">
+            <article id="session1-grid" class="session-grid">
+                <img class="banner-svg" src="./recources/svg/session1-banner.svg" alt="sessions 1 banner">
+                <img class="grid-img1" src="./recources/images/session1/adamochjacob.jpg" alt="placeholder">
+                <img class="grid-img2" src="./recources/images/session1/anton.jpg" alt="placeholder">
+                <img class="grid-img3" src="./recources/images/session1/jacobochamanda.jpg" alt="placeholder">
+                <img class="grid-img4" src="./recources/images/session1/dndsetup.jpg" alt="placeholder">
+                <img class="grid-img5" src="./recources/images/session1/dmerik2.jpg" alt="placeholder">
+            </article>
+            <article id="session2-grid" class="session-grid">
+                <img class="banner-svg" src="./recources/svg/session2-banner.svg" alt="sessions 2 banner">
+                <img class="grid2-img1" src="./recources/images/session2/mlem.jpg" alt="placeholder">
+                <img class="grid2-img2" src="./recources/images/session2/jacobholdingwindow.jpg" alt="placeholder">
+                <img class="grid2-img3" src="./recources/images/session2/bombastic sideeye.jpg" alt="placeholder">
+                <img class="grid2-img4" src="./recources/images/session2/thinking.jpg" alt="placeholder">
+                <img class="grid2-img5" src="./recources/images/session2/allheiltheholydm.jpg" alt="placeholder">
+                <img class="grid2-img6" src="./recources/images/session2/dndwindowdrawing.jpg" alt="placeholder">
+            </article>
+        </div>
+    </div>
+
+        <div id="dmbf-simulator" class="window pages" style="width: 1200px; height: 1040px;">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    DMBF Simulator
+                </div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body drawing-app-body">
+                <section class="tools-board">
+                    <div class="row">
+                        <label class="title">Shapes</label>
+                        <ul class="options">
+                            <li class="option tool" id="rectangle">
+                                <img src="icons/rectangle.svg" alt="">
+                                <span>Rectangle</span>
+                            </li>
+                            <li class="option tool" id="circle">
+                                <img src="icons/circle.svg" alt="">
+                                <span>Circle</span>
+                            </li>
+                            <li class="option tool" id="triangle">
+                                <img src="icons/triangle.svg" alt="">
+                                <span>Triangle</span>
+                            </li>
+                            <li class="option">
+                                <input type="checkbox" id="fill-color">
+                                <label for="fill-color">Fill color</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <label class="title">Options</label>
+                        <ul class="options">
+                            <li class="option active tool" id="brush">
+                                <img src="icons/brush.svg" alt="">
+                                <span>Brush</span>
+                            </li>
+                            <li class="option tool" id="eraser">
+                                <img src="icons/eraser.svg" alt="">
+                                <span>Eraser</span>
+                            </li>
+                            <li class="option">
+                                <input type="range" id="size-slider" min="1" max="30" value="2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row colors">
+                        <label class="title">Colors</label>
+                        <ul class="options">
+                            <li class="option"></li>
+                            <li class="option selected"></li>
+                            <li class="option"></li>
+                            <li class="option"></li>
+                            <li class="option">
+                                <input type="color" id="color-picker" value="#4A98F7">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row buttons">
+                        <button class="clear-canvas">Clear Canvas</button>
+                        <button class="save-img">Save As Image</button>
+                        <button class="get-drawing-area">Get drawing area / clear canvas</button>
+                    </div>
+                </section>
+                
+                    <canvas></canvas>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="start-bar">
+                <button class="start-button"><img src="./recources/win98_icons/windows98-icons/ico/windows.ico"
+                        alt="windows98 icon"><span>Start</span></button>
+            </div>
+        </nav>
+    </footer>
+    <script src="./recources/js/script.js"></script>
+</body>
+
+</html>

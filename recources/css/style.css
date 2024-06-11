@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'W95FA';
+    src: url(../fonts/W95FA/w95fa.woff), url(../fonts/W95FA/w95fa.woff2);
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'W95FA';
+}
+
+/* body styling */
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100svh;
+    background-image: url(../images/dnd98bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Desktop grid container - used to initially place the windows upon loading the document*/
+section.desktop-grid {
+    height: calc(100vh - 3.5rem);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(20, 4.05%);
+    grid-template-rows: repeat(20, 5%);
+    column-gap: 1%;
+}
+
+/*Window placement on grid */
+#campaign-members {
+    grid-row: 2;
+    grid-column: 3;
+    z-index: 0; /* Fixes the bug where the z-index of the contents tab is not set to 0 when the doc is loaded. */
+    min-width: 560px;
+    max-width: 560px;
+    min-height: 560px;
+    max-height: 560px;
+}
+
+.members-window-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#sessions {
+    grid-row: 3;
+    grid-column: 9;
+    z-index: 0;
+}
+
+#dmbf-simulator {
+    grid-row: 18;
+    grid-column: 8;
+    z-index: 0;
+}
+
+/* desktop icons styling */
+.pc-icons-container {
+    width: 90px;
+    height: 450px;
+    margin-left: 2rem;
+    position: absolute;
+}
+
+.desktop-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.desktop-app p {
+    color: whitesmoke;
+    margin-top: 15px;
+}
+
+.title-bar:hover {
+    cursor: -webkit-grab; cursor: grab;
+}
+
+.title-bar:active {
+    cursor: -webkit-grabbing; cursor: grabbing;
+}
+
+/* Campaign members window tyling */
+.image-section img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.img-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px;
+}
+
+/* General Sessions grid styling */
+
+.sessions-window-body {
+    margin: 0;
+}
+
+#sessions {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title-bar {
+    flex-shrink: 0;
+}
+
+.sessions-window-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.session-grid {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: .5rem; /* Add some space between the grids */
+}
+
+.banner-svg {
+    grid-column: span 5;
+    width: 100%;
+    height: auto;
+}
+
+.session-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Specific Sessions grid styling */
+
+/* Session 1 grid */
+#session1-grid .grid-img1 {
+    grid-column: 1 / span 2;
+}
+
+#session1-grid .grid-img2 {
+    grid-column: 3 / span 3;
+}
+
+#session1-grid .grid-img3 {
+    grid-column: 1 / span 5;
+}
+
+#session1-grid .grid-img4 {
+    grid-column: 1 / span 3;
+}
+
+#session1-grid .grid-img5 {
+    grid-column: 4 / span 2;
+}
+
+/* Session 2 grid */
+#session2-grid .grid2-img1 {
+    grid-column: 1 / span 2;
+}
+
+#session2-grid .grid2-img2 {
+    grid-column: 3 / span 3;
+}
+
+#session2-grid .grid2-img3 {
+    grid-column: 1 / span 5;
+}
+
+#session2-grid .grid2-img4 {
+    grid-column: 1 / span 3;
+}
+
+#session2-grid .grid2-img5 {
+    grid-column: 4 / span 2;
+}
+
+#session2-grid .grid2-img6 {
+    grid-column: 1 / span 5; /* This ensures the last image spans the entire row */
+}
+
+/* Bottom bar styling */
+.start-bar {
+    background: #c0c0c0;
+    height: 2.5rem;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 1rem);
+    display: flex;
+    padding: 0.5rem;
+    z-index: 999999999;
+    justify-content: space-between;
+    box-shadow: 0 -2px #fffdfc, 0 -3px #cce9eb;
+}
+
+/* Starty button styling */
+.start-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.start-button img {
+    margin-right: 10px;
+}
+
+.start-button span{
+    font-weight: bold;
+    font-size: 1rem;
+}
