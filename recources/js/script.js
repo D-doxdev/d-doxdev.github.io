@@ -226,3 +226,13 @@ sessionsMinimizeBtn.onclick = function(){
 dmbfMinimizeBtn.onclick = function(){
     dmbfPage.style.display = 'none';
 }
+
+// Super secret DM button functionality
+let ssdmsBtn = document.getElementById('SSDMS-btn');
+
+ssdmsBtn.onclick = function(){
+    let prompt = window.prompt('Enter the super secret phrase');
+    if (prompt === "I love nico") {
+        alert("Love you too buddy <3")
+    }
+}
