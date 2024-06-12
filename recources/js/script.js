@@ -200,10 +200,10 @@ campaignMembersTab.onclick = function(){
 }
 
 sessionsTab.onclick = function(){
-    if(sessionsPage.style.display === 'none') {
-        sessionsPage.style.display = 'block';
+    if(sessionsPage.style.visibility === 'hidden') {
+        sessionsPage.style.visibility = 'visible';
     } else {
-        sessionsPage.style.display = 'none';
+        sessionsPage.style.visibility = 'hidden';
     }
 }
 
@@ -220,7 +220,7 @@ campaignMembersMinimizeBtn.onclick = function(){
 }
 
 sessionsMinimizeBtn.onclick = function(){
-    sessionsPage.style.display = 'none';
+    sessionsPage.style.visibility = 'hidden';
 }
 
 dmbfMinimizeBtn.onclick = function(){
